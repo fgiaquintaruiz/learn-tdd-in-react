@@ -19,7 +19,7 @@ describe('<NewMessageForm onSend={sendHandler} />', () => {
 
         beforeEach( async () => {
 
-            sendHandler = jest.fn().mockName('sendHandler')
+            sendHandler = jest.fn().mockName('sendHandler');
 
             ({ getByTestId } = render(<NewMessageForm onSend={sendHandler}/>))
 
