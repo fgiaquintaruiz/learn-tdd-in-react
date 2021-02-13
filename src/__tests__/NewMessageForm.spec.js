@@ -11,9 +11,15 @@ describe('<NewMessageForm onSend={sendHandler} />', () => {
 
     describe('clicking the send button', () => {
 
-        const sendHandler = jest.fn().mockName('sendHandler')
+        //it works for me
+        //const sendHandler = jest.fn().mockName('sendHandler')
+
+        //this generates me the undefined error, I have to comment a line on NewMessageForm.js also
+        let sendHandler
 
         beforeEach( async () => {
+
+            sendHandler = jest.fn().mockName('sendHandler')
 
             ({ getByTestId } = render(<NewMessageForm onSend={sendHandler}/>))
 

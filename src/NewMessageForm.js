@@ -9,7 +9,14 @@ const NewMessageForm = ({ onSend }) => {
     }
 
     const handleSend = () => {
-        onSend(inputText)
+        //Have to comment this line to get to the result on the Component test
+        // expect(sendHandler).toHaveBeenCalledWith(...expected)
+        //
+        // Expected: "New message"
+        //
+        // Number of calls: 0
+
+        //onSend(inputText)
         setInputText('')
     }
 
